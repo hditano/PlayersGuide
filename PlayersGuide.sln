@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manticore", "Manticore\Manticore.csproj", "{67239B9E-2F0B-4ED4-83CA-2032722F46EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumeration", "Enumeration\Enumeration.csproj", "{D3C0FB85-1ABF-4E79-82AA-40F5804F30B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{67239B9E-2F0B-4ED4-83CA-2032722F46EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67239B9E-2F0B-4ED4-83CA-2032722F46EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67239B9E-2F0B-4ED4-83CA-2032722F46EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C0FB85-1ABF-4E79-82AA-40F5804F30B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C0FB85-1ABF-4E79-82AA-40F5804F30B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C0FB85-1ABF-4E79-82AA-40F5804F30B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C0FB85-1ABF-4E79-82AA-40F5804F30B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
