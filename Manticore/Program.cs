@@ -10,21 +10,27 @@ Console.WriteLine("-----------------------------------");
 Console.Write("How far from the city do you want to station the Manticore: ");
 DISTANCE = Console.ReadLine();
 Console.Clear();
+Main();
 
-while (THE_MANTICORE > 0 || CITY > 0)
+void Main()
 {
-    Console.WriteLine($"STATUS: Round: {ROUND}  City: {CITY}/15  Manticore: {THE_MANTICORE}/10");
-    int modifier = ComputeModifier(ROUND);
-    Console.WriteLine($"The cannon is expected to deal {modifier} damage this round");
-    Console.Write("Enter desired cannon range: ");
-    int range = Convert.ToInt32(Console.ReadLine());
-    string damageText = ComputeDamage(range);
-    Console.WriteLine($"That round was a {damageText}");
-    string result = ComputeResult(modifier);
-    Console.WriteLine($"{result}");
+    while (THE_MANTICORE > 0 || CITY > 0)
+    {
+        Console.WriteLine($"STATUS: Round: {ROUND}  City: {CITY}/15  Manticore: {THE_MANTICORE}/10");
+        int modifier = ComputeModifier(ROUND);
+        Console.WriteLine($"The cannon is expected to deal {modifier} damage this round");
+        Console.Write("Enter desired cannon range: ");
+        int range = Convert.ToInt32(Console.ReadLine());
+        string damageText = ComputeDamage(range);
+        Console.WriteLine($"That round was a {damageText}");
+        ComputeResult(modifier);
 
-    if (THE_MANTICORE <= 0) break;
-
+        if (THE_MANTICORE < 0)
+        {
+            Console.WriteLine($"The Manticore has been destroyed! The city of Consolas has been saved!");
+            return;
+        }
+    }
 }
 
 
@@ -42,16 +48,10 @@ string ComputeDamage(int modifier)
     else return "FELL SHORT";
 }
 
-string ComputeResult(int modifier)
+void ComputeResult(int modifier)
 {
-    if (THE_MANTICORE > 0)
-    {
         CITY--;
         ROUND++;
         THE_MANTICORE -= modifier;
-        return "--------------------------------";
-    } else
-    {
-        return $"The Manticore has been destroyed! The city of Consolas has been saved!";
-    }
+        Console.WriteLine("---------------------");
 }
