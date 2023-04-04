@@ -25,3 +25,17 @@ int AskForNumberInRange(string text, int min, int max)
 
     return num;
 }
+
+
+Console.WriteLine(countDown(20));
+int countDown(int a)
+{
+    if (a == 0)
+    {
+        return 0;
+    } else
+    {
+        Console.WriteLine(a);
+        return countDown(a - 1);
+    }
+}
