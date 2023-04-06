@@ -23,13 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Properties", "Properties\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticMethods", "StaticMethods\StaticMethods.csproj", "{11362CBB-3E19-4F6F-B351-A82F2DCC14E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePoint", "ThePoint\ThePoint.csproj", "{2265B91E-7A3D-4FBE-A748-B5F9B557DB99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThePoint", "ThePoint\ThePoint.csproj", "{2265B91E-7A3D-4FBE-A748-B5F9B557DB99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheColor", "TheColor\TheColor.csproj", "{945475DC-2C6B-46A0-938E-E3E35B8E7331}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheColor", "TheColor\TheColor.csproj", "{945475DC-2C6B-46A0-938E-E3E35B8E7331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCard", "TheCard\TheCard.csproj", "{61227063-9AE8-4081-83D8-E0DABAC093FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheCard", "TheCard\TheCard.csproj", "{61227063-9AE8-4081-83D8-E0DABAC093FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLockedDoor", "TheLockedDoor\TheLockedDoor.csproj", "{FC43D579-C0CF-4E9C-BF12-FBC1378D99E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLockedDoor", "TheLockedDoor\TheLockedDoor.csproj", "{FC43D579-C0CF-4E9C-BF12-FBC1378D99E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePasswordValidator", "ThePasswordValidator\ThePasswordValidator.csproj", "{07325F42-F390-4288-84FB-60B0B33DDDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{FC43D579-C0CF-4E9C-BF12-FBC1378D99E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC43D579-C0CF-4E9C-BF12-FBC1378D99E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC43D579-C0CF-4E9C-BF12-FBC1378D99E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07325F42-F390-4288-84FB-60B0B33DDDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07325F42-F390-4288-84FB-60B0B33DDDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07325F42-F390-4288-84FB-60B0B33DDDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07325F42-F390-4288-84FB-60B0B33DDDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
