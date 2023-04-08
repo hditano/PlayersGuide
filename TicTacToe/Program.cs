@@ -23,14 +23,19 @@ class Player
 
 class Board
 {
-    private int[] _board { get; set; } = new int[8];
+    private int[] _board { get; set; } = new int[9];
+    private string[] _results { get; set; } = new string[9] {"A", "B", "C", "D", "E", "F", "G", "H", "I"};
 
     public void ShowBoard()
     {
-        foreach(var item in _board)
-        {
-            Console.WriteLine(item);
-        }
+        Console.WriteLine("Tic Tac Toe");
+        Console.WriteLine("-------------");
+        Console.WriteLine("");
+        Console.WriteLine($"  {_results[0]} | {_results[1]} | {_results[2]} ");
+        Console.WriteLine($" --- --- ---");
+        Console.WriteLine($"  {_results[3]} | {_results[4]} | {_results[5]} "); 
+        Console.WriteLine($" --- --- ---");
+        Console.WriteLine($"  {_results[6]} | {_results[7]} | {_results[8]} ");
     }
 
 }
