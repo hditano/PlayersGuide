@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLockedDoor", "TheLockedD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThePasswordValidator", "ThePasswordValidator\ThePasswordValidator.csproj", "{07325F42-F390-4288-84FB-60B0B33DDDF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{EE159FC1-A331-4971-B2F3-39899CBAE172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{EE159FC1-A331-4971-B2F3-39899CBAE172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{EE159FC1-A331-4971-B2F3-39899CBAE172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE159FC1-A331-4971-B2F3-39899CBAE172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE159FC1-A331-4971-B2F3-39899CBAE172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
