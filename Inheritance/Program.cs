@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-new Pack().Add(new Arrow());
+new Pack().Add();
 
 class InventoryItem
 {
@@ -55,22 +55,26 @@ class Sword : InventoryItem
 
 class Pack
 {
-    private InventoryItem[] array { get; set; } = new InventoryItem[10];
-    private int TotalItems { get;} = 10;
-    private double MaxWeight { get;} = 3;
-    private double MaxVolume { get; } = 3;
+    private InventoryItem[] array { get; set; } = { new Sword(), new Food(), new Water(), new Rope(), new Bow(), new Arrow() };
+    private double MaxWeight { get;} = 5;
+    private double MaxVolume { get; } = 5;
 
-    public bool Add(InventoryItem item)
+    public void Add()
     {
-        if (MaxWeight > item._weight || MaxVolume > item._volume)
+
+        foreach(var i in array)
         {
-            array[array.Length - 1] = item;
-            Console.WriteLine("Item added");
-            return true;
-        } else
-        {
-            return false;
+            if (MaxWeight > i._weight || MaxVolume > i._volume)
+            {
+                Console.WriteLine($"Item about to be added: {i}");
+                array[array.Length - 1] = i;
+            }
+            else
+            {
+                Console.WriteLine($"Item could not been added {i}");
+            }
         }
+
     }
 
 }
