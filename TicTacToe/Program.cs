@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Runtime.InteropServices;
+
 new TicTacToe().Run();
 
 class TicTacToe
@@ -11,10 +13,26 @@ class TicTacToe
 
     public void Run()
     {
+        
         Board new1 = new Board();
-        new1.CreateSymbol(player1);
-        new1.CheckPosition(player1);
-        new1.ShowBoard();
+
+        while (counter !< 9)
+        {
+            if (counter % 2 == 0)
+            {
+                counter++;
+                new1.CheckPosition(player1, counter);
+                
+            }
+            else
+            {
+                counter++;
+                new1.CheckPosition(player2, counter);
+            }
+
+            new1.ShowBoard();
+
+        }
 
     }
 }
@@ -36,6 +54,7 @@ class Board
 {
     private int[] _board { get; set; } = new int[9];
     private char[,] _results { get; set; } = new char[3, 3];
+    private State _state { get; set; } = new State();
 
     public void ShowBoard()
     {
@@ -49,15 +68,17 @@ class Board
         Console.WriteLine($"  {_results[2, 0]}  | {_results[2, 1]}  | {_results[2, 2]} ");
     }
 
-    public void CheckPosition(Player p)
+    public void CheckPosition(Player p, int counter)
     {
         char isEmpty = '\0';
         bool isDone = false;
 
+        Console.WriteLine(_state.CheckState(_results, p));
 
         while (!isDone)
         {
-            Console.Write("Please choose a new square as [row,col] ");
+            Console.WriteLine($"Round: {counter} | Player: {p._name}");
+            Console.Write($"Please choose a new square as [row,col]: ");
             string? input = Console.ReadLine();
             string[] tmp_array = input.Split(',');
             int[] ints = tmp_array.Select(int.Parse).ToArray();
@@ -74,11 +95,28 @@ class Board
             }
         }
     }
+}
 
-    public void CreateSymbol(Player p)
+class State
+{
+
+    internal bool CheckState(char[,] results, Player p)
     {
-        Console.WriteLine($"Hello Player: {p._name}");
-        _results[0, 1] = p._symbol;
+        if (results[0, 0] == p._symbol && results[0, 1] == p._symbol && results[0, 2] == p._symbol) return true;
+        if (results[1,0] == p._symbol && results[1,1] == p._symbol && results[1,2] == p._symbol) return true;
+        if (results[2,0] == p._symbol && results[2,1] == p._symbol && results[2,2] == p._symbol) return true;
+
+        if (results[0,0] == p._symbol && results[1,0] == p._symbol && results[2,0] == p._symbol) return true;
+        if (results[1,1] == p._symbol && results[2,1] == p._symbol && results[3,1] == p._symbol) return true;
+        if (results[0,2] == p._symbol && results[1,2] == p._symbol && results[2,2] == p._symbol) return true;
+
+        if (results[0, 1] == p._symbol && results[1, 1] == p._symbol && results[2, 2] == p._symbol) return true;
+        if (results[0, 2] == p._symbol && results[1, 1] == p._symbol && results[2, 0] == p._symbol) return true;
+
+        else return false;
+
+
     }
+
 }
 
