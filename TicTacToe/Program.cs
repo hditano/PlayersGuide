@@ -13,7 +13,7 @@ class TicTacToe
     {
         Board new1 = new Board();
         Console.Write("Please choose a new square as [row,col] ");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
         string[] tmp_array = input.Split(',');
         int[] ints = tmp_array.Select(int.Parse).ToArray();
         new1.CheckPosition(player1, ints);
@@ -55,7 +55,7 @@ class Board
     public void CheckPosition(Player p, int[] array)
     {
         char isEmpty = '\0';
-        if (_results[0, 0] == isEmpty) _results[array[0], array[1]] = 'X';
+        if (_results[array[0], array[1]] == isEmpty) _results[array[0], array[1]] = p._symbol;
         else Console.WriteLine("Its not empty");
     }
 
