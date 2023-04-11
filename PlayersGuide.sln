@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{E7674DFA-4E7F-474F-B917-F0D30E4084CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheOldRobot", "TheOldRobot\TheOldRobot.csproj", "{45D75EED-A6A8-412E-AE63-FC8884D82552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{E7674DFA-4E7F-474F-B917-F0D30E4084CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7674DFA-4E7F-474F-B917-F0D30E4084CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7674DFA-4E7F-474F-B917-F0D30E4084CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
