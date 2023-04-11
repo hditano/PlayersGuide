@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe", "TicTacToe\TicT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{C4302EE3-1016-4D8B-8EC6-9E78C5F3D847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{E7674DFA-4E7F-474F-B917-F0D30E4084CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{E7674DFA-4E7F-474F-B917-F0D30E4084CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheOldRobot", "TheOldRobot\TheOldRobot.csproj", "{45D75EED-A6A8-412E-AE63-FC8884D82552}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheOldRobot", "TheOldRobot\TheOldRobot.csproj", "{45D75EED-A6A8-412E-AE63-FC8884D82552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboticInterface", "RoboticInterface\RoboticInterface.csproj", "{6B711F38-7D99-4340-AA96-B7BB34C046E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D75EED-A6A8-412E-AE63-FC8884D82552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B711F38-7D99-4340-AA96-B7BB34C046E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B711F38-7D99-4340-AA96-B7BB34C046E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B711F38-7D99-4340-AA96-B7BB34C046E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B711F38-7D99-4340-AA96-B7BB34C046E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
