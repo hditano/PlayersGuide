@@ -13,9 +13,9 @@ public struct Coordinate
         _col = col;
     }
 
-    public string CheckStats(int row, int col)
+    public string CheckStats()
     {
-        if (row + 1 == col || col + 1 == row || row - 1 == col || col - 1 == row) return "Its next to each other";
+        if (_row + 1 == _col || _col + 1 == _row || _row - 1 == _col || _col - 1 == _row) return "Its next to each other";
         else return "It's not next to each other";
     }
 
@@ -25,7 +25,7 @@ class Test
 {
     public void CallingIt()
     {
-        Coordinate cord = new Coordinate(0, 0);
-        Console.WriteLine(cord.CheckStats(1,2));
+        Coordinate cord = new Coordinate(1,2);
+        Console.WriteLine(cord.CheckStats());
     }
 }
