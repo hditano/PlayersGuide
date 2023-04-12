@@ -25,7 +25,7 @@ class Test
 {
     public void CallingIt()
     {
-        Coordinate cord = new Coordinate();
-        Console.WriteLine(cord.CheckStats(1, 3));
+        Coordinate cord = new Coordinate(0, 0);
+        Console.WriteLine(cord.CheckStats(1,2));
     }
 }
