@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
 int THE_MANTICORE = 10;
 int CITY = 15;
 int ROUND = 1;

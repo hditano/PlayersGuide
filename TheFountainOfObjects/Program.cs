@@ -56,6 +56,7 @@ public class State : StateProps
         }
 
         Console.WriteLine("You did it!!");
+        Console.Write($"It took you to finish {DateTime.Now - _StartTime}");
         Console.ReadLine();
     }
 
@@ -111,6 +112,9 @@ public class StateProps
     protected Location _ExitLocation { get; set; }
     protected bool _ActivateFountain { get; set; }
     protected bool _FinishedGame { get; set; }
+    protected DateTime _StartTime { get; }
+    protected TimeSpan _TimeLeft { get; set; }
+
 
     public StateProps()
     {
@@ -119,6 +123,7 @@ public class StateProps
         _ExitLocation = new Location(0, 0);
         _ActivateFountain = false;
         _FinishedGame = false;
+        _StartTime = DateTime.Now;
 
     }
 }
