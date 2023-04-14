@@ -8,6 +8,7 @@ public class MainLoop
     {
         State state = new State();
         state.States();
+        
     }
 }
 
@@ -24,6 +25,13 @@ public class Grid : StateProps
 
     public void Display()
     {
+        for(var i = 0; i < _MyGrid.GetLength(0); i++)
+        {
+            for(var j = 0; j < _MyGrid.GetLength(1); j++)
+            {
+                Console.Write($"{_MyGrid[i, j]}");
+            }
+        }
     }
 
 }
@@ -31,19 +39,17 @@ public class Grid : StateProps
 public class State : StateProps
 {
 
+    private Grid MyGrid { get; }
+
+    public State()
+    {
+        MyGrid = new Grid();
+    }
+
     public void States()
     {
-        while(!(_OnFountain && _OnExit))
+        while(!(_ActivateFountain && _FinishedGame))
         {
-
-            if (IsOverFountain())
-            {
-                _OnFountain = true;
-            }
-            if (IsFinished())
-            {
-                _OnExit = true;
-            }
 
             CheckPlayerPosition();
 
@@ -76,13 +82,19 @@ public class State : StateProps
                 var newLocation3 = new Location(_PlayerLocation.row, _PlayerLocation.col - 1);
                 if(IsOnMap(newLocation3))
                     _PlayerLocation = newLocation3;  break;
+            case "enable":
+                if (IsOverFountain())
+                    Console.WriteLine("You hear the rushing waters from the Fountain of Objects. It has been reactivated"); 
+                    _ActivateFountain = true; break;
+            case "exit":
+                if (IsFinished())
+                    Console.WriteLine("The Fountain of Objects has been reactivated and you have escaped with your life");
+                    _FinishedGame = true; break;
             default:break;
         }
 
         Console.WriteLine($" Player: {_PlayerLocation}");
         Console.WriteLine($"Fountain: {_FountainOfObjects}");
-        Console.WriteLine($"Fountain bool: {_OnFountain}");
-        Console.WriteLine($"Exit bool: {_OnExit}");
     }
 
     public bool IsOnMap(Location location) => location.row >= 0 && location.row <= 4 && location.col >= 0 && location.col <= 4;
@@ -97,16 +109,16 @@ public class StateProps
     protected Location _FountainOfObjects { get; }
     protected Location _PlayerLocation { get; set; }
     protected Location _ExitLocation { get; set; }
-    protected bool _OnFountain { get; set; }
-    protected bool _OnExit { get; set; }
+    protected bool _ActivateFountain { get; set; }
+    protected bool _FinishedGame { get; set; }
 
     public StateProps()
     {
         _FountainOfObjects = new Location(0, 2);
         _PlayerLocation = new Location(0, 0);
         _ExitLocation = new Location(0, 0);
-        _OnFountain = false;
-        _OnExit = false;
+        _ActivateFountain = false;
+        _FinishedGame = false;
 
     }
 }
