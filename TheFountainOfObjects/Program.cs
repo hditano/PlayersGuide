@@ -50,14 +50,30 @@ public class Grid
 public class State : StateProps
 {
 
+    public static void CheckPosition()
+    {
+        State state = new State();
+        state._PlayerPosition = (0, 1);
+    }
 }
 
 // abstract class that creates props
 public abstract class StateProps
 {
     protected bool _Fountain { get; set; }
+    protected (int, int) _FountainPosition { get; }
     protected bool _EntranceExit { get; set; }
-    protected int _Position { get; set; }
+    protected (int, int) _EntranceExitPosition { get; }
+    protected (int, int) _PlayerPosition { get; set; }
+
+    public StateProps()
+    {
+        _Fountain = false;
+        _FountainPosition = (0, 2);
+        _EntranceExitPosition = (0, 0);
+        _PlayerPosition = (0, 0);
+    }
+
 }
 
 // Record to create Player class
@@ -76,6 +92,9 @@ public class MainLoop
         while(!GameOver)
         {
             MyGame.Display();
+            State.CheckPosition();
+
+            string? input = Console.ReadLine();
 
             Console.Clear();
         }
