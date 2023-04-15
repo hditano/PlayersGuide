@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Records", "Records\Records.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{F39C9411-642A-4355-ABD5-1B442CE674DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFountainOfObjects", "TheFountainOfObjects\TheFountainOfObjects.csproj", "{B911902E-2C1D-4B56-BF26-A00A0F82566C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheFountainOfObjects", "TheFountainOfObjects\TheFountainOfObjects.csproj", "{B911902E-2C1D-4B56-BF26-A00A0F82566C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFeud", "TheFeud\TheFeud.csproj", "{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{B911902E-2C1D-4B56-BF26-A00A0F82566C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B911902E-2C1D-4B56-BF26-A00A0F82566C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B911902E-2C1D-4B56-BF26-A00A0F82566C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
