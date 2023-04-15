@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheFountainOfObjects", "The
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFeud", "TheFeud\TheFeud.csproj", "{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeNumberCrunching", "SafeNumberCrunching\SafeNumberCrunching.csproj", "{8359A283-013C-41BD-90C2-93B2060EC640}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB86F6DF-F26E-4132-94C1-87B07B44F1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8359A283-013C-41BD-90C2-93B2060EC640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8359A283-013C-41BD-90C2-93B2060EC640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8359A283-013C-41BD-90C2-93B2060EC640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8359A283-013C-41BD-90C2-93B2060EC640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
