@@ -1,42 +1,43 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Net;
+Console.Write("Please choose a filter: 1.IsEven 2.IsPositive 3.IsMultiple10: ");
+int reply = Convert.ToInt32(Console.ReadLine());
 
-Sieve MyDelegate = new Sieve();
-MyDelegate._func3(20);
+Sieve sieve = reply switch
+{
+    1 => new Sieve(IsEven),
+    2 => new Sieve(IsPositive),
+    3 => new Sieve(IsMultiple10),
+    _ => throw new NotImplementedException(),
+};
+
+
+while(true)
+{
+    Console.WriteLine("Write a Number: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+
+    string goodOrEvil = sieve.IsGoodMethod(number) ? "good" : "false";
+    Console.WriteLine($"{number} is {goodOrEvil}");
+}
+
+bool IsEven(int num) => num % 2 == 0;
+bool IsPositive(int num) => num > 0;
+bool IsMultiple10(int num) => num % 10 == 0;
 
 public class Sieve
 {
-    public Func<int, bool> _func;
-    public Func<int, bool> _func2;
-    public Func<int, bool> _func3;
+    public delegate bool IsGoodDelegate(int number);
 
+    public IsGoodDelegate isGood;
 
-    public Sieve()
+    public Sieve(IsGoodDelegate operation)
     {
-        _func = IsEven;
-        _func2 = IsPositive;
-        _func3 = IsMultiple;
+        isGood = operation;
     }
 
-    private bool IsGood(int number)
+    public bool IsGoodMethod(int number)
     {
-        if (number > 0) return true;
-        else return false;
-    }
-
-    private bool IsEven(int number)
-    {
-        return number % 2 == 0 ? true : false;
-    }
-
-    private bool IsPositive(int number)
-    {
-        return number > 0 ? true : false;
-    }
-
-    private bool IsMultiple(int number)
-    {
-        return number % 10 == 0 ? true : false;
+        return isGood(number);
     }
 }
