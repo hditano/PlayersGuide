@@ -57,9 +57,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafeNumberCrunching", "Safe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterRandom", "BetterRandom\BetterRandom.csproj", "{CEC35296-75DD-4CCE-AE1E-280D1FA2291C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeptiGame", "ExeptiGame\ExeptiGame.csproj", "{B14DEFD2-1180-42CB-B8F5-4CAE31F2B29D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExeptiGame", "ExeptiGame\ExeptiGame.csproj", "{B14DEFD2-1180-42CB-B8F5-4CAE31F2B29D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheSieve", "TheSieve\TheSieve.csproj", "{3BF31FF8-A784-4CEF-AB96-949B9A29686C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheSieve", "TheSieve\TheSieve.csproj", "{3BF31FF8-A784-4CEF-AB96-949B9A29686C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharberryTrees", "CharberryTrees\CharberryTrees.csproj", "{5AD0E964-809B-4037-B976-AA391096DB77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{3BF31FF8-A784-4CEF-AB96-949B9A29686C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BF31FF8-A784-4CEF-AB96-949B9A29686C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BF31FF8-A784-4CEF-AB96-949B9A29686C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD0E964-809B-4037-B976-AA391096DB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD0E964-809B-4037-B976-AA391096DB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD0E964-809B-4037-B976-AA391096DB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD0E964-809B-4037-B976-AA391096DB77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
