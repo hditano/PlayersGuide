@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharberryTrees", "Charberry
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRepeatingStream", "TheRepeatingStream\TheRepeatingStream.csproj", "{03850456-ADDC-43DD-B04B-3679E3C9AB3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousRandomWords", "AsynchronousRandomWords\AsynchronousRandomWords.csproj", "{A8B087DE-2EA5-48A4-8880-C94C13CE8696}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{03850456-ADDC-43DD-B04B-3679E3C9AB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03850456-ADDC-43DD-B04B-3679E3C9AB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03850456-ADDC-43DD-B04B-3679E3C9AB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B087DE-2EA5-48A4-8880-C94C13CE8696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B087DE-2EA5-48A4-8880-C94C13CE8696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B087DE-2EA5-48A4-8880-C94C13CE8696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B087DE-2EA5-48A4-8880-C94C13CE8696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
